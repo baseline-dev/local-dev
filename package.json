@@ -1,0 +1,38 @@
+{
+  "name": "@baseline-dev/local-dev",
+  "version": "0.0.1",
+  "description": "Local serverless development.",
+  "main": "src/index.js",
+  "bin": {
+    "local-dev": "./bin/cli.js"
+  },
+  "scripts": {
+    "test:unit": "echo \"Error: no test specified\" && exit 0",
+    "release": "npm version patch",
+    "publish:npm": "npm run test:unit && npm run release && npm publish --access public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/baseline-dev/local-dev.git"
+  },
+  "keywords": [
+    "serverless",
+    "lambda",
+    "local",
+    "development"
+  ],
+  "author": "Nikolai Onken",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/baseline-dev/local-dev/issues"
+  },
+  "homepage": "https://github.com/baseline-dev/local-dev#readme",
+  "dependencies": {
+    "@baseline-dev/tower": "0.0.7",
+    "@koa/cors": "^3.1.0",
+    "@koa/router": "^9.3.1",
+    "esm": "^3.2.25",
+    "koa": "^2.13.0",
+    "yargs": "^15.4.1"
+  }
+}
