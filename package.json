@@ -28,7 +28,7 @@
   },
   "homepage": "https://github.com/baseline-dev/local-dev#readme",
   "dependencies": {
-    "@baseline-dev/tower": "0.0.7",
+    "@baseline-dev/tower": "0.0.8",
     "@koa/cors": "^3.1.0",
     "@koa/router": "^9.3.1",
     "esm": "^3.2.25",
