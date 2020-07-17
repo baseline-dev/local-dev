@@ -9,7 +9,7 @@ function initRoutes(app, opts) {
   }
   
   const { getMiddlewares } = require(join(process.cwd(), opts.middlewaresDir));
-  getMiddlewares().forEach(middleware => app.use(middleware));
+  getMiddlewares(app).forEach(middleware => app.use(middleware));
 
   app.use(cors({
     origin: (ctx) => {
