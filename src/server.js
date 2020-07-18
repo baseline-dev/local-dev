@@ -10,7 +10,7 @@ async function init(opts) {
   const app = new Koa();
   
   if (opts.staticDir) {
-    app.use(koaStatic(staticDir));
+    app.use(koaStatic(opts.staticDir));
   }
   
   initRoutes(app, {
