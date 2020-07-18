@@ -13,8 +13,11 @@ function initRoutes(app, opts) {
 
   app.use(cors({
     origin: (ctx) => {
+      if (!process.env.BASELINE_API_CORS_ORIGIN) return;
+
       const corsOrigin = process.env.BASELINE_API_CORS_ORIGIN.split(',');
       if (corsOrigin.indexOf(ctx.request.header.origin) < 0) return;
+      
       return ctx.request.header.origin;
     }
   }));
