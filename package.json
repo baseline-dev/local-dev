@@ -1,6 +1,6 @@
 {
   "name": "@baseline-dev/local-dev",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "Local serverless development.",
   "main": "src/index.js",
   "bin": {
