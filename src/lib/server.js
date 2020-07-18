@@ -3,8 +3,8 @@ import debug from 'debug';
 
 const log = debug('local-server');
 
-function initServer(app) {
-  const httpPort = process.env.PORT || 8081;
+function initServer(app, port = 8081) {
+  const httpPort = process.env.PORT || port;
   const appCallback = app.callback();
 
   log('Starting http server');
